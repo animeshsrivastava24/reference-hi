@@ -1,7 +1,7 @@
 ---
 title: scope
-categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+categories: [ "चर" ]
+subCategories: [ "चर स्कोप और क्वालिफायर" ]
 ---
 
 
@@ -11,51 +11,51 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 = Variable Scope
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Variables in the C++ programming language, which Arduino uses, have a property called scope. This is in contrast to early versions of languages such as BASIC where every variable is a _global_ variable.
+=== विवरण
+C ++ प्रोग्रामिंग लैंग्वेज में वेरिएबल्स, जिसे आर्डुइनो उपयोग करता है, के पास एक प्रॉपर्टी होती है जिसे स्कोप कहा जाता है। यह BASIC जैसी भाषाओं के शुरुआती संस्करणों के विपरीत है जहां हर चर _global_ चर है।
 
-A global variable is one that can be seen by every function in a program. Local variables are only visible to the function in which they are declared. In the Arduino environment, any variable declared outside of a function (e.g. setup(), loop(), etc. ), is a _global_ variable.
+एक वैश्विक चर वह है जो एक कार्यक्रम में प्रत्येक फ़ंक्शन द्वारा देखा जा सकता है। स्थानीय चर केवल उस फ़ंक्शन को दिखाई देते हैं जिसमें उन्हें घोषित किया गया है। आर्डुइनो वातावरण में, किसी फ़ंक्शन (जैसे setup(), loop(), आदि) के बाहर घोषित किया गया कोई भी चर, एक _global_ चर है।
 
-When programs start to get larger and more complex, local variables are a useful way to insure that only one function has access to its own variables. This prevents programming errors when one function inadvertently modifies variables used by another function.
+जब कार्यक्रम बड़े और अधिक जटिल होने लगते हैं, तो स्थानीय चर यह सुनिश्चित करने के लिए एक उपयोगी तरीका है कि केवल एक ही कार्य अपने स्वयं के चर तक पहुंच सकता है। जब एक फ़ंक्शन अनजाने में दूसरे फ़ंक्शन द्वारा उपयोग किए जाने वाले चर को संशोधित करता है, तो यह प्रोग्रामिंग त्रुटियों को रोकता है।
 
-It is also sometimes handy to declare and initialize a variable inside a `for` loop. This creates a variable that can only be accessed from inside the for-loop brackets.
+कभी-कभी एक `for` लूप के अंदर एक वैरिएबल को घोषित करना और शुरू करना भी आसान है। यह एक वैरिएबल बनाता है जिसे केवल-लूप ब्रैकेट के अंदर से एक्सेस किया जा सकता है।
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// कैसे उपयोग करें खंड की शुरुआत
+[#कैसेउपयोगकरें]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== उदाहरण कोड
+// वर्णन करें कि उदाहरण कोड क्या है और संबंधित कोड जोड़ें   ►►►►► यह खंड अनिवार्य है ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-int gPWMval;  // any function will see this variable
+int gPWMval;  // किसी भी फ़ंक्शन को यह चर दिखाई देगा
 
 void setup() {
   // ...
 }
 
 void loop() {
-  int i;    // "i" is only "visible" inside of "loop"
-  float f;  // "f" is only "visible" inside of "loop"
+  int i;    // "i" केवल "लूप" के अंदर "दिखाई" देगा
+  float f;  // "f" केवल "लूप" के अंदर "दिखाई" देगा
   // ...
 
   for (int j = 0; j < 100; j++) {
-    // variable j can only be accessed inside the for-loop brackets
+    // चर j को केवल-लूप ब्रैकेट के अंदर एक्सेस किया जा सकता है
   }
 }
 ----
@@ -63,15 +63,15 @@ void loop() {
 
 
 --
-// HOW TO USE SECTION ENDS
+// कैसे उपयोग करें खंड का अंत
 
 
-// SEE ALSO SECTION
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत

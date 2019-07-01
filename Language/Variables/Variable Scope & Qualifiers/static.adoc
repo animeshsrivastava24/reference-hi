@@ -1,47 +1,47 @@
 ---
 title: static
-categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+categories: [ "चर" ]
+subCategories: [ "चर स्कोप और क्वालिफायर" ]
 ---
 
 = Static
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-The `static` keyword is used to create variables that are visible to only one function. However unlike local variables that get created and destroyed every time a function is called, static variables persist beyond the function call, preserving their data between function calls.
+=== विवरण
+`static` कीवर्ड का उपयोग उन चर बनाने के लिए किया जाता है जो केवल एक फ़ंक्शन के लिए दिखाई देते हैं। हालाँकि, स्थानीय चर जो किसी फ़ंक्शन को कॉल करने और नष्ट करने के लिए मिलते हैं, के विपरीत, स्टैटिक चर फ़ंक्शन कॉल से परे बने रहते हैं, फ़ंक्शन कॉल के लिए अपने डेटा को संरक्षित करते हैं।
 
-Variables declared as static will only be created and initialized the first time a function is called.
+स्थिर के रूप में घोषित चर केवल पहली बार एक समारोह कहा जाता है बनाया और शुरू किया जाएगा।
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// कैसे उपयोग करें खंड की शुरुआत
+[#कैसेउपयोगकरें]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== उदाहरण कोड
+// वर्णन करें कि उदाहरण कोड क्या है और संबंधित कोड जोड़ें   ►►►►► यह खंड अनिवार्य है ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 /* RandomWalk
   Paul Badger 2007
-  RandomWalk wanders up and down randomly between two
-  endpoints. The maximum move in one loop is governed by
-  the parameter "stepsize".
-  A static variable is moved up and down a random amount.
-  This technique is also known as "pink noise" and "drunken walk".
+  RandomWalk दो अंत बिंदुओं के बीच बेतरतीब ढंग से ऊपर और नीचे 
+  घूमता है| एक लूप में अधिकतम चाल को पैरामीटर "stepsize" 
+  द्वारा नियंत्रित किया जाता है।
+  एक स्थिर चर एक यादृच्छिक राशि ऊपर और नीचे ले जाया जाता है।
+  इस तकनीक को "pink noise" और "drunken walk" के रूप में भी जाना जाता है।
 */
 
 #define randomWalkLowRange -20
@@ -63,16 +63,16 @@ void loop() {
 }
 
 int randomWalk(int moveSize) {
-  static int place; // variable to store value in random walk - declared static so that it stores
-  // values in between function calls, but no other functions can change its value
+  static int place; // रैंडम वॉक में मूल्य को स्टोर करने के लिए वैरिएबल - स्टैटिक घोषित किया गया ताकि वह स्टोर हो सके
+  // फ़ंक्शन कॉल के बीच का मान, लेकिन कोई भी अन्य फ़ंक्शन इसका मान नहीं बदल सकता है
 
   place = place + (random(-moveSize, moveSize + 1));
 
-  if (place < randomWalkLowRange) {                               // check lower and upper limits
-    place = randomWalkLowRange + (randomWalkLowRange - place);    // reflect number back in positive direction
+  if (place < randomWalkLowRange) {                               // निचली और ऊपरी सीमा की जाँच करें
+    place = randomWalkLowRange + (randomWalkLowRange - place);    // सकारात्मक दिशा में वापस संख्या को प्रतिबिंबित करें
   }
   else if (place > randomWalkHighRange) {
-    place = randomWalkHighRange - (place - randomWalkHighRange);  // reflect number back in negative direction
+    place = randomWalkHighRange - (place - randomWalkHighRange);  // नकारात्मक दिशा में वापस संख्या को प्रतिबिंबित करें
   }
 
   return place;
@@ -82,15 +82,15 @@ int randomWalk(int moveSize) {
 
 
 --
-// HOW TO USE SECTION ENDS
+// कैसे उपयोग करें खंड का अंत
 
 
-// SEE ALSO SECTION STARTS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत

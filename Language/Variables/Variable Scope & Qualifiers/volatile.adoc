@@ -1,7 +1,7 @@
 ---
 title: volatile
-categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+categories: [ "चर" ]
+subCategories: [ "चर स्कोप और क्वालिफायर" ]
 ---
 
 
@@ -11,54 +11,54 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 = volatile keyword
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-`volatile` is a keyword known as a variable _qualifier_, it is usually used before the datatype of a variable, to modify the way in which the compiler and subsequent program treat the variable.
+=== विवरण
+`volatile` एक कीवर्ड है जिसे चर _qualifier_ के रूप में जाना जाता है, यह आमतौर पर चर के डेटाटाइप से पहले उपयोग किया जाता है, जिस तरह से संकलक और बाद के कार्यक्रम चर का इलाज करते हैं।
 
-Declaring a variable `volatile` is a directive to the compiler. The compiler is software which translates your C/C++ code into the machine code, which are the real instructions for the Atmega chip in the Arduino.
+एक चर `volatile` की घोषणा करना कंपाइलर के लिए एक निर्देश है। कंपाइलर सॉफ्टवेयर है जो आपके C/C++ कोड को मशीन कोड में अनुवाद करता है, जो आर्डुइनो में Atmega चिप के लिए वास्तविक निर्देश हैं।
 
-Specifically, it directs the compiler to load the variable from RAM and not from a storage register, which is a temporary memory location where program variables are stored and manipulated. Under certain conditions, the value for a variable stored in registers can be inaccurate.
+विशेष रूप से, यह संकलक को रैम से चर को लोड करने के लिए निर्देशित करता है न कि स्टोरेज रजिस्टर से, जो एक अस्थायी मेमोरी लोकेशन है, जहां प्रोग्राम वैरिएबल को संग्रहीत और हेरफेर किया जाता है। कुछ शर्तों के तहत, रजिस्टरों में संग्रहित चर का मान गलत हो सकता है।
 
-A variable should be declared `volatile` whenever its value can be changed by something beyond the control of the code section in which it appears, such as a concurrently executing thread. In the Arduino, the only place that this is likely to occur is in sections of code associated with interrupts, called an interrupt service routine.
+एक चर को `volatile` घोषित किया जाना चाहिए जब भी इसका मूल्य कोड अनुभाग के नियंत्रण से परे किसी चीज से बदला जा सकता है जिसमें यह प्रकट होता है, जैसे कि समवर्ती रूप से निष्पादित धागा। आर्डुइनो में, यह होने की संभावना एकमात्र स्थान है जो इंटरप्ट से जुड़े कोड के वर्गों में है, जिसे इंटरप्ट सर्विस रूटीन कहा जाता है।
 
 [float]
 === int or long volatiles
-If the `volatile` variable is bigger than a byte (e.g. a 16 bit int or a 32 bit long), then the microcontroller can not read it in one step, because it is an 8 bit microcontroller. This means that while your main code section (e.g. your loop) reads the first 8 bits of the variable, the interrupt might already change the second 8 bits. This will produce random values for the variable.
+यदि `volatile` चर बाइट से बड़ा है (e.g. a 16 bit int या a 32 bit long), तब माइक्रोकंट्रोलर इसे एक चरण में नहीं पढ़ सकता है, क्योंकि यह एक 8 बिट माइक्रोकंट्रोलर है. इसका मतलब यह है कि जब आपका मुख्य कोड अनुभाग (जैसे आपका लूप) चर के पहले 8 बिट्स को पढ़ता है, तो बाधा पहले से ही दूसरे 8 बिट्स को बदल सकती है. यह चर के लिए यादृच्छिक मूल्यों का उत्पादन करेगा।
 
-Remedy:
+उपाय:
 
-While the variable is read, interrupts need to be disabled, so they can't mess with the bits, while they are read.
-There are several ways to do this:
+जब चर पढ़ा जाता है, तो व्यवधान को अक्षम करने की आवश्यकता होती है, इसलिए वे बिट्स के साथ गड़बड़ नहीं कर सकते हैं, जबकि वे पढ़े जाते हैं।
+इसे करने बहुत सारे तरीके हैं:
 
-1. #LANGUAGE# link:../../../functions/interrupts/nointerrupts[noInterrupts]
+1. #भाषा# link:../../../functions/interrupts/nointerrupts[noInterrupts]
 
-2. use the ATOMIC_BLOCK macro. Atomic operations are single MCU operations - the smallest possible unit.
+2. इस्तेमाल करें ATOMIC_BLOCK macro | परमाणु संचालन एकल एमसीयू ऑपरेशन हैं - सबसे छोटी संभव इकाई।
 
 
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// कैसे उपयोग करें खंड की शुरुआत
+[#कैसेउपयोगकरें]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== उदाहरण कोड
+// वर्णन करें कि उदाहरण कोड क्या है और संबंधित कोड जोड़ें   ►►►►► यह खंड अनिवार्य है ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-// toggles LED when interrupt pin changes state
+// जब टॉगल पिन में बदलाव होता है, तो टॉगल एलईडी बदल जाता है
 
 int pin = 13;
 volatile byte state = LOW;
@@ -80,11 +80,11 @@ void blink() {
 
 [source,arduino]
 ----
-#include <util/atomic.h> // this library includes the ATOMIC_BLOCK macro.
+#include <util/atomic.h> // इस लाइब्रेरी में शामिल हैं ATOMIC_BLOCK macro |
 volatile int input_from_interrupt;
 
   ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
-    // code with interrupts blocked (consecutive atomic operations will not get interrupted)
+    // अवरोध के साथ कोड अवरुद्ध (लगातार परमाणु संचालन बाधित नहीं होगा)
     int result = input_from_interrupt;
   }
 ----
@@ -92,18 +92,18 @@ volatile int input_from_interrupt;
 
 
 --
-// HOW TO USE SECTION ENDS
+// कैसे उपयोग करें खंड का अंत
 
 
-// SEE ALSO SECTION STARTS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 [role="language"]
-* #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
+* #भाषा# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत

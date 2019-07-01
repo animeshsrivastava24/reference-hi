@@ -1,7 +1,7 @@
 ---
 title: const
-categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+categories: [ "चर" ]
+subCategories: [ "चर स्कोप और क्वालिफायर" ]
 ---
 
 
@@ -11,30 +11,30 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 = const keyword
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-The `const` keyword stands for constant. It is a variable _qualifier_ that modifies the behavior of the variable, making a variable "_read-only_". This means that the variable can be used just as any other variable of its type, but its value cannot be changed. You will get a compiler error if you try to assign a value to a `const` variable.
+=== विवरण
+`Const` कीवर्ड निरंतर के लिए खड़ा है। यह एक चर _qualifier_ है जो चर के व्यवहार को संशोधित करता है, जिससे एक चर "_read-only_" बनता है। इसका अर्थ है कि चर का उपयोग इसके प्रकार के किसी भी अन्य चर के रूप में किया जा सकता है, लेकिन इसके मूल्य को नहीं बदला जा सकता है। यदि आप `const` वैरिएबल के लिए मान निर्दिष्ट करने का प्रयास करते हैं तो आपको एक कंपाइलर त्रुटि मिलेगी।
 
-Constants defined with the `const` keyword obey the rules of link:../scope[variable scoping] that govern other variables. This, and the pitfalls of using `#define`, makes the `const` keyword a superior method for defining constants and is preferred over using link:../../../structure/further-syntax/define[`#define`].
+`const` कीवर्ड के साथ परिभाषित कॉन्स्टैंट, link:../scope[वैरिएबल स्कोपिंग] के नियमों को मानते हैं जो अन्य वेरिएबल्स को नियंत्रित करते हैं। यह, और `#define` का उपयोग करने के नुकसान, `const` कीवर्ड को स्थिरांक को परिभाषित करने के लिए एक बेहतर विधि बनाता है और link:../../../structure/further-syntax/define[`#define`] का उपयोग करने पर अधिक पसंद किया जाता है।
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// कैसे उपयोग करें खंड की शुरुआत
+[#कैसेउपयोगकरें]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== उदाहरण कोड
+// वर्णन करें कि उदाहरण कोड क्या है और संबंधित कोड जोड़ें   ►►►►► यह खंड अनिवार्य है ◄◄◄◄◄
 
 
 [source,arduino]
@@ -42,31 +42,31 @@ Constants defined with the `const` keyword obey the rules of link:../scope[varia
 const float pi = 3.14;
 float x;
 // ....
-x = pi * 2; // it's fine to use consts in math
-pi = 7;     // illegal - you can't write to (modify) a constant
+x = pi * 2; // गणित में consts का उपयोग करना ठीक है
+pi = 7;     // अवैध - आप एक स्थिरांक को (संशोधित) नहीं लिख सकते
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-*`#define` or `const`*
+=== नोट्स और चेतावनी
+*`#define` या `const`*
 
-You can use either `const` or `#define` for creating numeric or string constants. For link:../../data-types/array[arrays], you will need to use `const`. In general `const` is preferred over `#define` for defining constants.
+आप संख्यात्मक या स्ट्रिंग स्थिरांक बनाने के लिए या तो `const` या `#define` का उपयोग कर सकते हैं। link:../../data-types/array[सरणियों] के लिए, आपको `const` का उपयोग करने की आवश्यकता होगी। स्थिरांक को परिभाषित करने के लिए सामान्य रूप से `const` को `#define` से अधिक पसंद किया जाता है |
 
 
 --
-// HOW TO USE SECTION ENDS
+// कैसे उपयोग करें खंड का अंत
 
 
-// SEE ALSO SECTION STARTS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 [role="language"]
-* #LANGUAGE# link:../../../structure/further-syntax/define[#define]
+* #भाषा# link:../../../structure/further-syntax/define[#define]
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत
