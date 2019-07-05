@@ -1,7 +1,7 @@
 ---
 title: bit()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "कार्यों" ]
+subCategories: [ "बिट्स और बाइट्स" ]
 ---
 
 
@@ -11,40 +11,40 @@ subCategories: [ "Bits and Bytes" ]
 = bit()
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc.).
+=== विवरण
+निर्दिष्ट बिट के मूल्य की गणना करता है (बिट 0 का मान 1 है, बिट 1 का मान 2 है, बिट 2 का मान 4 है, आदि)।
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `bit(n)`
 
 
 [float]
-=== Parameters
-`n`: the bit whose value to compute
+=== पैरामीटर
+`n`: बिट जिसकी गणना करने के लिए मूल्य
 
 
 [float]
-=== Returns
-The value of the bit.
+=== रिटर्न
+बिट का मूल्य।
 
 --
-// OVERVIEW SECTION ENDS
+// अवलोकन अनुभाग अंत
 
 
-// SEE ALSO SECTION
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत
