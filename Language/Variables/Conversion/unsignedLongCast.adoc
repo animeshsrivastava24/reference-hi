@@ -1,7 +1,7 @@
 ---
 title: (unsigned long)
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "चर" ]
+subCategories: [ "रूपांतरण" ]
 ---
 
 
@@ -11,45 +11,45 @@ subCategories: [ "Conversion" ]
 = (unsigned long)
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/unsignedlong[unsigned long] data type.
+=== विवरण
+एक मान को link:../../data-types/unsignedlong[unsigned long] डेटा प्रकार में परिवर्तित करता है |
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `(unsigned long)x`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== पैरामीटर
+`x`: एक मान। अनुमत डेटा प्रकार: कोई भी प्रकार।
 
 [float]
-=== Returns
+=== रिटर्न
 `unsigned long`
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// SEE ALSO SECTION STARTS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/unsignedlong[unsigned long]
+* #भाषा# link:../../data-types/unsignedlong[unsigned long]
 
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत

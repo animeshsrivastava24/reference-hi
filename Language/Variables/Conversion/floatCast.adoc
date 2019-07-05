@@ -1,7 +1,7 @@
 ---
 title: float()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "चर" ]
+subCategories: [ "रूपांतरण" ]
 ---
 
 
@@ -11,61 +11,61 @@ subCategories: [ "Conversion" ]
 = float()
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/float[float] data type.
+=== विवरण
+एक मान को link:../../data-types/float[float] डेटा प्रकार में परिवर्तित करता है |
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `float(x)` +
-`(float)x` (C-style type conversion)
+`(float)x` (C-style प्रकार रूपांतरण)
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type.
+=== पैरामीटर
+`x`: एक मान। अनुमत डेटा प्रकार: कोई भी प्रकार।
 
 
 [float]
-=== Returns
-Data type: `float`.
+=== रिटर्न
+डेटा प्रकार: `float`.
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// कैसे उपयोग करें खंड की शुरुआत
+[#कैसेउपयोगकरें]
 --
 
 [float]
-=== Notes and Warnings
-See the reference for link:../../data-types/float[float] for details about the precision and limitations of floating point numbers on Arduino.
+=== नोट्स और चेतावनी
+संदर्भ देखें link:../../data-types/float[float], आर्डुइनो पर फ्लोटिंग पॉइंट नंबरों की शुद्धता और सीमाओं के बारे में जानकारी के लिए।
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// कैसे उपयोग करें खंड का अंत
 
 
 
-// SEE ALSO SECTION BEGINS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/float[float]
+* #भाषा# link:../../data-types/float[float]
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत

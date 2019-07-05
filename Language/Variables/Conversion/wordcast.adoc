@@ -1,7 +1,7 @@
 ---
 title: word()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "चर" ]
+subCategories: [ "रूपांतरण" ]
 ---
 
 
@@ -11,50 +11,50 @@ subCategories: [ "Conversion" ]
 = word()
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/word[word] data type.
+=== विवरण
+एक मान को link:../../data-types/word[word] डेटा प्रकार में परिवर्तित करता है |
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `word(x)` +
 `word(h, l)` +
-`(word)x` (C-style type conversion)
+`(word)x` (C-style प्रकार रूपांतरण)
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type. +
-`h`: the high-order (leftmost) byte of the word. +
-`l`: the low-order (rightmost) byte of the word.
+=== पैरामीटर
+`x`: एक मान। अनुमत डेटा प्रकार: कोई भी प्रकार। +
+`h`: शब्द का उच्च क्रम (सबसे बाईं ओर)। +
+`l`: शब्द के निचले क्रम (सबसे दाएं) बाइट।
 
 
 [float]
-=== Returns
-Data type: `word`.
+=== रिटर्न
+डेटा प्रकार: `word`.
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// SEE ALSO SECTION STARTS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/word[word]
+* #भाषा# link:../../data-types/word[word]
 
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत

@@ -1,7 +1,7 @@
 ---
 title: long()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "चर" ]
+subCategories: [ "रूपांतरण" ]
 ---
 
 
@@ -11,47 +11,47 @@ subCategories: [ "Conversion" ]
 = long()
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/long[long] data type.
+=== विवरण
+एक मान को link:../../data-types/long[long] डेटा प्रकार में परिवर्तित करता है |
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `long(x)` +
-`(long)x` (C-style type conversion)
+`(long)x` (C-style प्रकार रूपांतरण)
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type.
+=== पैरामीटर
+`x`: एक मान। अनुमत डेटा प्रकार: कोई भी प्रकार।
 
 
 [float]
-=== Returns
-Data type: `long`.
+=== रिटर्न
+डेटा प्रकार: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
 
-// SEE ALSO SECTION STARTS
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/long[long]
+* #भाषा# link:../../data-types/long[long]
 
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत
