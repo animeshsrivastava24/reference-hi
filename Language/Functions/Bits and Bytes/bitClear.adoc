@@ -1,7 +1,7 @@
 ---
 title: bitClear()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "कार्यों" ]
+subCategories: [ "बिट्स और बाइट्स" ]
 ---
 
 
@@ -11,41 +11,41 @@ subCategories: [ "Bits and Bytes" ]
 = bitClear()
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Clears (writes a 0 to) a bit of a numeric variable.
+=== विवरण
+न्यूमेरिक वैरिएबल का थोड़ा सा क्लियर (0 से लिखता है)।
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `bitClear(x, n)`
 
 
 [float]
 === Parameters
-`x`: the numeric variable whose bit to clear. +
-`n`: which bit to clear, starting at 0 for the least-significant (rightmost) bit.
+`x`: संख्यात्मक चर जिसका बिट साफ़ करना है. +
+`n`: कम से कम महत्वपूर्ण (सबसे दाएं) बिट के लिए 0 पर शुरू करने के लिए कौन सा स्पष्ट है।
 
 
 [float]
-=== Returns
+=== पैरामीटर
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// अवलोकन अनुभाग अंत
 
 
-// SEE ALSO SECTION
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत
