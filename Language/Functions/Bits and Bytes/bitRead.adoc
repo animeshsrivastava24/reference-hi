@@ -1,7 +1,7 @@
 ---
 title: bitRead()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "कार्यों" ]
+subCategories: [ "बिट्स और बाइट्स" ]
 ---
 
 
@@ -11,41 +11,41 @@ subCategories: [ "Bits and Bytes" ]
 = bitRead()
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
-=== Description
-Reads a bit of a number.
+=== विवरण
+थोड़ी संख्या पढ़ता है।
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `bitRead(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the number from which to read. +
-`n`: which bit to read, starting at 0 for the least-significant (rightmost) bit.
+=== पैरामीटर
+`x`: जिस नंबर से पढ़ना है। +
+`n`: जो कम से कम महत्वपूर्ण (सबसे दाहिने) के लिए 0 से शुरू होने वाला है।
 
 
 [float]
-=== Returns
-The value of the bit (0 or 1).
+=== रिटर्न
+बिट का मूल्य (0 or 1)|
 
 --
-// OVERVIEW SECTION ENDS
+// अवलोकन अनुभाग अंत
 
 
-// SEE ALSO SECTION
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत
