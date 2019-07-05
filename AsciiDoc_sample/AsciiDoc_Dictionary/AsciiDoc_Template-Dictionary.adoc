@@ -1,60 +1,60 @@
 
 
 
-// This is a documentation file for authors and editors of the Arduino Manutius content platform.
-// Below you can find a list of all the possible page elements with the corresponding
-// AsciiDoc syntax
+// यह Arduino Manutius सामग्री मंच के लेखकों और संपादकों के लिए एक प्रलेखन फ़ाइल है।
+// नीचे आप संबंधित सभी संभावित पेज तत्वों की सूची पा सकते हैं|
+// AsciiDoc सिंटैक्स
 
 
-// GENERAL GUIDELINES
-// The [space]+ sends text to a new line, aka it generates a <br> in the HTML output, e.g.:
-// This is some text. +
-// This is some other text in a new line
+// सामान्य दिशा - निर्देश
+// [space]+ एक नई लाइन के लिए पाठ भेजता है, उर्फ यह HTML आउटपुट में एक <br> उत्पन्न करता है, जैसे:
+// यह कुछ पाठ है। +
+// यह एक नई पंक्ति में कुछ अन्य पाठ है
 
-// The [%hardbreaks] generates a new <p> paragraph, e.g.:
-// This is a <p> paragraph
+// [%hardbreaks] एक नया <p> अनुच्छेद उत्पन्न करता है, जैसे:
+// यह है एक <p> अनुच्छेद
 // [%hardbreaks]
-// This is another <p> paragraph
+// यह है एक और <p> अनुच्छेद
 
-// If you need to add a blank line between sections of the page you can use:
+// यदि आपको पृष्ठ के उन हिस्सों के बीच एक रिक्त रेखा जोड़ने की आवश्यकता है जो आप उपयोग कर सकते हैं:
 // {empty} +
 
-// Using [%hardbreaks] at the end of a chunk is always a good practice.
-// [%hardbreaks] close the HTML tags, making the HTML output clean.
+// [%hardbreaks] एक चंक के अंत में हमेशा एक अच्छा अभ्यास होता है|
+// [%hardbreaks] HTML टैग्स को बंद करें, जिससे HTML आउटपुट साफ होता है|
 
-// This ''' is a line divider
+// यह ''' एक लाइन डिवाइडर है
 
 
-// PAGE TITLE
-= Page Title [h1]
+// पृष्ठ का शीर्षक
+= पृष्ठ का शीर्षक [h1]
 
-// SECTION DIV WITH ID STARTS
-[#name_of_id]
+// आईडी (id) स्टार्स के साथ अनुभाग डिव (div)
+[#आईडी_का_नाम]
 --
 
-// Add your content here.
+// अपनी सामग्री यहां जोड़ें।
 
-// In case your output is an HTML file, this tag will create a wrapper div with the id specified, e.g.:
-// <div id="name_of_id" class="openblock"></div>
+// यदि आपका आउटपुट एक HTML फ़ाइल है, तो यह टैग निर्दिष्ट आईडी (id) के साथ एक आवरण डिव (div) बनाएगा, उदा।:
+// <div id="आईडी_का_नाम" class="खुलाब्लॉक"></div>
 
 --
-// SECTION DIV WITH ID ENDS
+// आईडी (id) समाप्त होता है अनुभाग डिव (div) के साथ
 
 
-// OTHER TITLES
+// अन्य शीर्षक
 [float]
-== Section Title [h2]
-
-[float]
-=== Paragraph Title [h3]
+== अनुभाग शीर्षक [h2]
 
 [float]
-==== Sub-paragraph Title [h4]
+=== अनुच्छेद शीर्षक [h3]
+
+[float]
+==== उप अनुच्छेद शीर्षक [h4]
 
 
 '''
 
-// TEXT STYLES
+// पाठ स्टाइल
 This is normal <p> text +
 *This is bold <strong> text* +
 _This is italic <em> text_ +
