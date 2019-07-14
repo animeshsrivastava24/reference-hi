@@ -1,108 +1,108 @@
 
 
 
-// This is a documentation file for authors and editors of the Arduino Manutius content platform.
-// Below you can find a list of all the possible page elements with the corresponding
-// AsciiDoc syntax
+// यह आर्डुइनो Manutius सामग्री मंच के लेखकों और संपादकों के लिए एक प्रलेखन फ़ाइल है।
+// नीचे आप संबंधित सभी संभावित पेज तत्वों की सूची पा सकते हैं|
+// AsciiDoc सिंटैक्स
 
 
-// GENERAL GUIDELINES
-// The [space]+ sends text to a new line, aka it generates a <br> in the HTML output, e.g.:
-// This is some text. +
-// This is some other text in a new line
+// सामान्य दिशा - निर्देश
+// [space]+ एक नई लाइन के लिए पाठ भेजता है, उर्फ यह HTML आउटपुट में एक <br> उत्पन्न करता है, जैसे:
+// यह कुछ पाठ है। +
+// यह एक नई पंक्ति में कुछ अन्य पाठ है
 
-// The [%hardbreaks] generates a new <p> paragraph, e.g.:
-// This is a <p> paragraph
+// [%hardbreaks] एक नया <p> अनुच्छेद उत्पन्न करता है, जैसे:
+// यह है एक <p> अनुच्छेद
 // [%hardbreaks]
-// This is another <p> paragraph
+// यह है एक और <p> अनुच्छेद
 
-// If you need to add a blank line between sections of the page you can use:
+// यदि आपको पृष्ठ के उन हिस्सों के बीच एक रिक्त रेखा जोड़ने की आवश्यकता है जो आप उपयोग कर सकते हैं:
 // {empty} +
 
-// Using [%hardbreaks] at the end of a chunk is always a good practice.
-// [%hardbreaks] close the HTML tags, making the HTML output clean.
+// [%hardbreaks] एक चंक के अंत में हमेशा एक अच्छा अभ्यास होता है|
+// [%hardbreaks] HTML टैग्स को बंद करें, जिससे HTML आउटपुट साफ होता है|
 
-// This ''' is a line divider
+// यह ''' एक लाइन डिवाइडर है
 
 
-// PAGE TITLE
-= Page Title [h1]
+// पृष्ठ का शीर्षक
+= पृष्ठ का शीर्षक [h1]
 
-// SECTION DIV WITH ID STARTS
-[#name_of_id]
+// आईडी (ID) स्टार्स के साथ अनुभाग डिव (DIV)
+[#आईडी_का_नाम]
 --
 
-// Add your content here.
+// अपनी सामग्री यहां जोड़ें।
 
-// In case your output is an HTML file, this tag will create a wrapper div with the id specified, e.g.:
-// <div id="name_of_id" class="openblock"></div>
+// यदि आपका आउटपुट एक HTML फ़ाइल है, तो यह टैग निर्दिष्ट आईडी (id) के साथ एक आवरण डिव (div) बनाएगा, उदा।:
+// <div id="आईडी_का_नाम" class="खुलाब्लॉक"></div>
 
 --
-// SECTION DIV WITH ID ENDS
+// आईडी (id) समाप्त होता है अनुभाग डिव (div) के साथ
 
 
-// OTHER TITLES
+// अन्य शीर्षक
 [float]
-== Section Title [h2]
-
-[float]
-=== Paragraph Title [h3]
+== अनुभाग शीर्षक [h2]
 
 [float]
-==== Sub-paragraph Title [h4]
+=== अनुच्छेद शीर्षक [h3]
+
+[float]
+==== उप अनुच्छेद शीर्षक [h4]
 
 
 '''
 
-// TEXT STYLES
-This is normal <p> text +
-*This is bold <strong> text* +
-_This is italic <em> text_ +
-*_This is bold+italic <strong><em> text_* +
-[small]#This is small <span class="small"> text# +
-#This is highlighted <mark> text# +
-'`This is single quoted text`' +
-"`This is double quoted text`"
+// पाठ स्टाइल
+यह सामान्य <p> पाठ है +
+*यह बोल्ड <strong> पाठ है* +
+_यह इटैलिक <em> पाठ है_ +
+*_यह बोल्ड+इटैलिक <strong> <em> पाठ है_* +
+[small]#यह छोटा <span class="small"> पाठ है# +
+#इसे <mark> हाइलाइट किया गया है# +
+'`यह एकल उद्धृत पाठ है`' +
+"`यह दोहरे उद्धृत पाठ है`"
 [%hardbreaks]
 
 '''
 
-// LINKS
-// Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
-http://arduino.cc[This is an external <a href> link^] in a new tab +
-link:../index.html[This is a relative <a href> link] +
-mailto:webmaster@arduino.cc[This is an e-mail link]
+// लिंक
+// कृपया ध्यान दें कि अंतिम वर्ग कोष्ठक से ठीक पहले ^ जोड़कर सभी बाहरी लिंक को एक नई विंडो / टैब में खोलने की आवश्यकता है
+http://arduino.cc[यह एक बाहरी <a href> लिंक^] एक नए टैब में +
+link:../index.html[यह एक रिश्तेदार <a href> लिंक] +
+mailto:webmaster@arduino.cc[यह एक ई-मेल लिंक है]
 [%hardbreaks]
 
 '''
 
-// LISTS
-* This
-* is
-** an
-*** unordered
-* list
+// सूची
+* यह
+* एक
+** अनियंत्रित
+*** सूची
+* है
 
 [%hardbreaks]
 
-. This
-. is
-.. a
-.. n
-... orde
-... red
-. list
+. यह
+. एक
+.. अनि
+.. यंत्रित
+... सू
+... ची
+. है
 
 '''
 
-// CODE
-This is `code` in a sentence +
-`This is a whole line of code` +
+// कोड
+यह एक वाक्य में `कोड` है +
+`यह कोड की एक पूरी लाइन है` +
 
-// HINT: Please note that sometimes when copy-pasting code a few spaces can be added at the beginnng of each line of code.
-// If that happens, please remove the extra spaces. Thanks!
+// सुझाव: कृपया ध्यान दें कि कभी-कभी कोड को कॉपी-पेस्ट करते समय कोड की प्रत्येक पंक्ति के शुरू में कुछ स्थान जोड़े जा सकते हैं |
+// यदि ऐसा होता है, तो कृपया अतिरिक्त स्थान हटा दें। धन्यवाद!
 
-This can be a lot more code
+यह एक बहुत अधिक कोड हो सकता है
 [source,arduino]
 ----
 for (int i = 0; i <= 99; i++) {
@@ -113,21 +113,21 @@ for (int i = 0; i <= 99; i++) {
 
 '''
 
-// TABLES
+// तालिकाएं
 |===
-|Name of Column 1 |Name of Column 2 |Name of Column 3
+|स्तंभ 1 का नाम |स्तंभ 2 का नाम |स्तंभ 3 का नाम 
 
-|Cell in column 1, row 1
-|Cell in column 2, row 1
-|Cell in column 3, row 1
+|स्तंभ 1, पंक्ति 1 में सेल
+|स्तंभ 2, पंक्ति 1 में सेल
+|स्तंभ 3, पंक्ति 1 में सेल
 
-|Cell in column 1, row 2
-|Cell in column 2, row 2
-|Cell in column 3, row 2
+|स्तंभ 1, पंक्ति 2 में सेल
+|स्तंभ 2, पंक्ति 2 में सेल
+|स्तंभ 3, पंक्ति 2 में सेल
 
-|Cell in column 1, row 3
-|Cell in column 2, row 3
-|Cell in column 3, row 3
+|स्तंभ 1, पंक्ति 3 में सेल
+|स्तंभ 2, पंक्ति 3 में सेल
+|स्तंभ 3, पंक्ति 3 में सेल
 |===
 [%hardbreaks]
 
@@ -135,27 +135,27 @@ for (int i = 0; i <= 99; i++) {
 
 // IMAGES
 
-// If you need to add an image to the Asciidoc please create a folder called 'attachments' in the same directory as the Asciidoc file,
-// place the image there and reference it as shown below. Images can be in SVG and PNG format, max size 200KB.
+// यदि आपको Asciidoc में एक छवि जोड़ने की आवश्यकता है, तो कृपया उसी निर्देशिका में 'अटैचमेंट' नामक एक फोल्डर बनाएं, जो कि Asciidoc फाइल के रूप में है,
+// छवि को वहां रखें और नीचे दिखाए अनुसार इसे संदर्भ दें। छवियाँ SVG और PNG प्रारूप में हो सकती हैं, अधिकतम आकार 200KB।
 
-// To include an image on its own line (i.e., a block image), use the image:: prefix in front of the file name and square brackets after it []
-// Make sure you add [%hardbreaks] between any text and the image
+// अपनी स्वयं की रेखा पर एक छवि (यानी, एक ब्लॉक छवि) को शामिल करने के लिए, छवि:: फ़ाइल नाम के सामने उपसर्ग और उसके बाद वर्ग कोष्ठक [] का उपयोग करें 
+// सुनिश्चित करें कि आप किसी भी पाठ और छवि के बीच [%hardbreaks] जोड़ते हैं
 
-This is a block image with a URL
+यह एक URL के साथ एक ब्लॉक इमेज है
 [%hardbreaks]
 image::https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/1040x660/604a3538c15e081937dbfbd20aa60aad/A/0/A000066_featured_2.jpg[]
 
 
-This is an image saved in the attachments folder with a caption
+यह कैप्शन के साथ अटैचमेंट फोल्डर में सेव की गई इमेज है
 [%hardbreaks]
-image::https://www.arduino.cc/reference/en/AsciiDoc_sample/AsciiDoc_Dictionary/attachments/ArduinoUno_R3_Front_450px.jpg[caption="", title="A beautiful Arduino UNO"]
+image::https://www.arduino.cc/reference/en/AsciiDoc_sample/AsciiDoc_Dictionary/attachments/ArduinoUno_R3_Front_450px.jpg[caption="", title="एक सुंदर आर्डुइनो उनो (UNO)"]
 
 
 '''
 
-// EMBED
+// एम्बेड
 
-This is a pretty embed of code from Gist
+यह Gist से कोड का एक सुंदर एम्बेड है
 ++++
 <script src="https://gist.github.com/mojavelinux/5333524.js">
 </script>
@@ -163,24 +163,24 @@ This is a pretty embed of code from Gist
 
 {empty} +
 
-And this is another of a video from YouTube
+और यह YouTube का एक वीडियो है
 ++++
 <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=6cRFf4qkcTw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 ++++
-// HINT: Please remember to set the iframe width to 100% to have the video responsive on all our platforms
+// सुझाव: कृपया याद रखें कि हमारे सभी प्लेटफार्मों पर वीडियो उत्तरदायी होने के लिए iframe की चौड़ाई 100% है
 
 {empty} +
 
-And here some slides from Sideshare, yay!
+और यहाँ स्लाइड से कुछ स्लाइड !
 ++++
 <iframe src="https://www.slideshare.net/slideshow/embed_code/4430242" width="100%" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/damellis/introduction-to-arduino-4430242" title="Introduction to Arduino" target="_blank">Introduction to Arduino</a> </strong> from <strong><a href="//www.slideshare.net/damellis" target="_blank">David Mellis</a></strong> </div>
 ++++
-// HINT: Please remember to set the iframe width to 100% to have the slide show responsive on all our platforms
+// सुझाव: कृपया हमारे सभी प्लेटफार्मों पर स्लाइड शो को उत्तरदायी बनाने के लिए iframe की चौड़ाई को 100% पर सेट करें
 
 {empty} +
 
-And this is some audio from SoundCloud
+और यह साउंडक्लाउड का कुछ ऑडियो है
 ++++
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/55323777&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 ++++
-// HINT: Please remember to set the iframe width to 100% to have the sound UI responsive on all our platforms
+// सुझाव: कृपया याद रखें कि हमारे सभी प्लेटफार्मों पर ध्वनि यूआई उत्तरदायी होने के लिए iframe की चौड़ाई 100% है
