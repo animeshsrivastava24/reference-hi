@@ -4,7 +4,7 @@ title_expanded: Less Than or Equal To
 categories: [ "संरचना" ]
 subCategories: [ "उपश्रेणी नाम" ]
 ---
-// ARDUINO लैंग्वेजेज रेफ्रीजेज टीजीएस (ऊपर)   ►►►►► हमेशा अपने फ़ाइल में शामिल करें ◄◄◄◄◄
+// आर्डुइनो लैंग्वेजेज रेफ्रीजेज टीजीएस (ऊपर)   ►►►►► हमेशा अपने फ़ाइल में शामिल करें ◄◄◄◄◄
 // शीर्षक सभी संदर्भ शर्तों के सूचकांक में दिखाई देगा
 // यदि शीर्षक एक ऑपरेटर है तो इसे title_expanded में शब्दों में लिखें
 // श्रेणियां: संरचना, चर या फ़ंक्शन के बीच चुनें
@@ -17,14 +17,14 @@ subCategories: [ "उपश्रेणी नाम" ]
 
 
 
-// ओवरव्यू सेक्शन स्टार्स
-[#ओवरव्यू]
+// अवलोकन अनुभाग शुरू होता है
+[#अवलोकन]
 --
 
 [float]
 === विवरण
-// वर्णन करें कि यह संदर्भ शब्द क्या करता है, और इसका उपयोग किस लिए किया जाता है	►►►►► इस अनुभाग में मैंडेटरी है ◄◄◄◄◄
-Writes an analog value (http://arduino.cc/en/Tutorial/PWM[PWM wave]) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to `analogWrite()`, the pin will generate a steady square wave of the specified duty cycle until the next call to `analogWrite()` (or a call to `digitalRead()` or `digitalWrite()` on the same pin). The frequency of the PWM signal on most pins is approximately 490 Hz. On the Uno and similar boards, pins 5 and 6 have a frequency of approximately 980 Hz.
+// वर्णन करें कि यह संदर्भ शब्द क्या करता है, और इसका उपयोग किस लिए किया जाता है	►►►►► यह अनुभाग में मैंडेटरी है ◄◄◄◄◄
+एक पिन करने के लिए एक अनुरूप (http://arduino.cc/en/Tutorial/PWM[PWM wave]) मूल्य लिखता है। अलग-अलग चमक पर एक एलईडी प्रकाश करने या विभिन्न गति से मोटर चलाने के लिए इस्तेमाल किया जा सकता है। `analogWrite()` के लिए एक कॉल के बाद, अगली कॉल `analogWrite()` (या `digitalRead()` या `digitalWrite()`) के लिए अगली कॉल तक पिन निर्दिष्ट कर्तव्य चक्र की एक स्थिर वर्ग तरंग उत्पन्न करेगा उसी पिन पर| अधिकांश पिनों पर पीडब्लूएम सिग्नल की आवृत्ति लगभग 490 हर्ट्ज है। ऊनो और इसी तरह के बोर्डों पर, पिन 5 और 6 में लगभग 980 हर्ट्ज की आवृत्ति होती है।
 [%hardbreaks]
 
 image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="", title="A beautiful Arduino UNO"]
@@ -32,81 +32,81 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 
 [float]
-=== Syntax
-// Enter Reference term syntax, please specify all available parameters  ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== वाक्य - विन्यास (Syntax)
+// संदर्भ शब्द वाक्य रचना दर्ज करें, कृपया सभी उपलब्ध पैरामीटर निर्दिष्ट करें  ►►►►► यह अनुभाग में मैंडेटरी है ◄◄◄◄◄
 `analogWrite(pin, value)`
 
 
 [float]
-=== Parameters
-// List all available parameters, please describe them one by one adding the data type (e.g int, boolean, char, String, float, long, double...)  ►►►►► THIS SECTION IS MANDATORY FOR FUNCTIONS ◄◄◄◄◄
-`pin`: the number of the pin to write to. Allowed data types: int.
+=== पैरामीटर
+// सभी उपलब्ध मापदंडों की सूची, डेटा प्रकार (जैसे int, boolean, char, String, float, long, double...) को जोड़कर एक-एक करके उनका वर्णन करें।  ►►►►► इस अनुभाग में अवसरों के लिए भंडार है ◄◄◄◄◄
+`pin`: Arduino पिन को लिखने के लिए। अनुमत डेटा प्रकार: `int`।
 
-`value`: the duty cycle between 0 (always off) and 255 (always on). Allowed data types: int.
+`value`: कर्तव्य चक्र: 0 (हमेशा बंद) और 255 (हमेशा) के बीच। अनुमत डेटा प्रकार: `int`.
 
 
 [float]
 === Returns
-// Enter what the function returns (e.g. HIGH or LOW), if there is no return please write: _Nothing_   ►►►►► THIS SECTION IS MANDATORY FOR FUNCTIONS ◄◄◄◄◄
+// फ़ंक्शन क्या देता है दर्ज करें (जैसे HIGH या LOW), अगर कोई वापसी नहीं है तो कृपया लिखें: _Nothing_   ►►►►► इस अनुभाग में अवसरों के लिए भंडार है ◄◄◄◄◄
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// ओवरव्यू अनुभाग अंत
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// कैसे उपयोग करें खंड की शुरुआत
+[#कैसेउपयोगकरें]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Sets the output to the LED proportional to the value read from the potentiometer.
+=== उदाहरण कोड
+// वर्णन करें कि उदाहरण कोड क्या है और संबंधित कोड जोड़ें  ►►►►► यह अनुभाग में मैंडेटरी है ◄◄◄◄◄
+पोटेंशियोमीटर से पढ़े जाने वाले मूल्य के लिए आनुपातिक एलईडी आउटपुट को सेट करता है|
 
 [source,arduino]
-// Add relevant code that exemplify the use of the Reference term,
-// Please note that sometimes when copy-pasting code, a few spaces can be added at the beginnng of each line of code.
-// If that happens, please remove the extra spaces. Thanks!
+// प्रासंगिक कोड जोड़ें जो संदर्भ शब्द के उपयोग की मिसाल पेश करता है,
+// कृपया ध्यान दें कि कभी-कभी कोड को कॉपी करते समय, कोड की प्रत्येक पंक्ति की शुरुआत में कुछ रिक्त स्थान जोड़े जा सकते हैं।
+// यदि ऐसा होता है, तो कृपया अतिरिक्त स्थान हटा दें। धन्यवाद!
 ----
-int ledPin = 9;      // LED connected to digital pin 9
-int analogPin = 3;   // potentiometer connected to analog pin 3
-int val = 0;         // variable to store the read value
+int ledPin = 9;      // एलईडी डिजिटल पिन 9 से जुड़ा है
+int analogPin = 3;   // पोटेंशियोमीटर एनालॉग पिन 3 से जुड़ा है
+int val = 0;         // चर मान को संग्रहीत करने के लिए
 
 void setup() {
-  pinMode(ledPin, OUTPUT);   // sets the pin as output
+  pinMode(ledPin, OUTPUT);  // पिन को आउटपुट के रूप में सेट करता है
 }
 
 void loop() {
-  val = analogRead(analogPin);   // read the input pin
-  analogWrite(ledPin, val / 4);  // analogRead values go from 0 to 1023, analogWrite values from 0 to 255
+  val = analogRead(analogPin);  // इनपुट पिन पढ़ें
+  analogWrite(ledPin, val / 4); // analogRead मान 0 से 1023 तक जाता है, analogWrite मान 0 से 255 तक
 }
 ----
 [%hardbreaks]
 
 
 [float]
-=== Notes and Warnings
-// Add useful notes, tips, caveat, known issues, and warnings about this Reference term
-This is because of interactions with the `millis()` and `delay()` functions.
+=== नोट्स और चेतावनी
+// इस संदर्भ शब्द के बारे में उपयोगी नोट्स, टिप्स, कैविएट, ज्ञात समस्याएँ और चेतावनी जोड़ें
+यह `millis()` और `delay()` कार्यों के साथ बातचीत के कारण होता है |
 [%hardbreaks]
 image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="", title="A beautiful Arduino UNO"]
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// कैसे उपयोग करें खंड का अंत
 
 
 
-// SEE ALSO SECTION
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
-// Link relevant content by category, such as other Reference terms (please add the tag #LANGUAGE#),
-// definitions: (please add the tag #DEFINITION#), and examples of Projects and Tutorials
-// examples: (please add the tag #EXAMPLE#)
+=== यह भी देखे
+// प्रासंगिक सामग्री को श्रेणी से लिंक करें, जैसे कि अन्य संदर्भ शब्द (कृपया टैग # भाषा# जोड़ें),
+// परिभाषाएँ: (कृपया #परिभाषा# टैग जोड़ें), और परियोजनाओं और ट्यूटोरियल के उदाहरण
+// उदाहरण: (कृपया टैग जोड़ें #उदाहरण#)
 
 [role="language"]
 // जब भी आप किसी अन्य संदर्भ अवधि के लिए लिंक करना चाहते हैं, या सामान्य रूप से एक रिश्तेदार लिंक के लिए,
