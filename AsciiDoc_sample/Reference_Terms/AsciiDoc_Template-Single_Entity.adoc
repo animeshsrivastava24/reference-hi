@@ -1,29 +1,29 @@
 ---
 title: Entity Title
 title_expanded: Less Than or Equal To
-categories: [ "Structure" ]
-subCategories: [ "Subcategory Name" ]
+categories: [ "संरचना" ]
+subCategories: [ "उपश्रेणी नाम" ]
 ---
-// ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
-// title will show up in the Index of all Reference terms
-// If the title is an operator write it out in words in title_expanded
-// categories: Pick between Structure, Variable or Function
-// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
+// ARDUINO लैंग्वेजेज रेफ्रीजेज टीजीएस (ऊपर)   ►►►►► हमेशा अपने फ़ाइल में शामिल करें ◄◄◄◄◄
+// शीर्षक सभी संदर्भ शर्तों के सूचकांक में दिखाई देगा
+// यदि शीर्षक एक ऑपरेटर है तो इसे title_expanded में शब्दों में लिखें
+// श्रेणियां: संरचना, चर या फ़ंक्शन के बीच चुनें
+// अनुक्रमणिका में उपलब्ध लोगों के भीतर उपश्रेणी ("डिजिटल I/O", "अंकगणितीय ऑपरेटर")
 
 
 
-// PAGE TITLE
-= title
+// पृष्ठ का शीर्षक
+= शीर्षक
 
 
 
-// OVERVIEW SECTION STARTS
-[#overview]
+// ओवरव्यू सेक्शन स्टार्स
+[#ओवरव्यू]
 --
 
 [float]
-=== Description
-// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== विवरण
+// वर्णन करें कि यह संदर्भ शब्द क्या करता है, और इसका उपयोग किस लिए किया जाता है	►►►►► इस अनुभाग में मैंडेटरी है ◄◄◄◄◄
 Writes an analog value (http://arduino.cc/en/Tutorial/PWM[PWM wave]) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to `analogWrite()`, the pin will generate a steady square wave of the specified duty cycle until the next call to `analogWrite()` (or a call to `digitalRead()` or `digitalWrite()` on the same pin). The frequency of the PWM signal on most pins is approximately 490 Hz. On the Uno and similar boards, pins 5 and 6 have a frequency of approximately 980 Hz.
 [%hardbreaks]
 
@@ -109,23 +109,23 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 // examples: (please add the tag #EXAMPLE#)
 
 [role="language"]
-// Whenever you want to link to another Reference term, or more in general to a relative link,
-// use the syntax shown below. Please note that the file format is subsituted by  attribute.
-// Please note that you always need to replace spaces that you might find in folder/file names with %20
-// The entire link to Reference pages must be lower case, regardless of the case of the folders and files in this repository.
-// For language tag, items will be automatically generated for any other item of the same subcategory,
-// no need to add links to other pages of the same subcategory
-// if you don't include this section, a minimal version with only the other pages of the same subcategory will be generated.
+// जब भी आप किसी अन्य संदर्भ अवधि के लिए लिंक करना चाहते हैं, या सामान्य रूप से एक रिश्तेदार लिंक के लिए,
+// नीचे दिखाए गए सिंटैक्स का उपयोग करें। कृपया ध्यान दें कि फ़ाइल स्वरूप को विशेषता द्वारा सदस्यता दी गई है।
+// कृपया ध्यान दें कि आपको हमेशा उन स्थानों को बदलने की आवश्यकता है जो आपको %20 के साथ फ़ोल्डर/फ़ाइल नामों में मिल सकते हैं
+// इस रिपॉजिटरी में फ़ोल्डर्स और फाइलों के मामले की परवाह किए बिना, संदर्भ पृष्ठों का पूरा लिंक कमतर होना चाहिए।
+// भाषा टैग के लिए, आइटम एक ही उपश्रेणी के किसी भी अन्य आइटम के लिए स्वचालित रूप से उत्पन्न होंगे,
+// एक ही उपश्रेणी के अन्य पृष्ठों के लिंक जोड़ने की आवश्यकता नहीं है
+// यदि आप इस अनुभाग को शामिल नहीं करते हैं, तो एक ही उपश्रेणी के अन्य पृष्ठों के साथ एक न्यूनतम संस्करण उत्पन्न होगा।
 * #LANGUAGE# link:../AsciiDoc_Template-Parent_Of_Entities[Parent Of Entities]
 * #LANGUAGE# link:../../AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary[AsciiDoc Template Dictionary]
 
 [role="definition"]
-// Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
+// कृपया ध्यान दें कि अंतिम वर्ग कोष्ठक से ठीक पहले ^ जोड़कर सभी बाहरी लिंक को एक नई विंडो/टैब में खोलने की आवश्यकता है
 * #DEFINITION# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 [role="example"]
-// Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
+// कृपया ध्यान दें कि अंतिम वर्ग कोष्ठक से ठीक पहले ^ जोड़कर सभी बाहरी लिंक को एक नई विंडो/टैब में खोलने की आवश्यकता है
 * #EXAMPLE# http://arduino.cc/en/Tutorial/Blink[Blink^]
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखें समाप्त
