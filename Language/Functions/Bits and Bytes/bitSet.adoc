@@ -1,7 +1,7 @@
 ---
 title: bitSet()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "कार्यों" ]
+subCategories: [ "बिट्स और बाइट्स" ]
 ---
 
 
@@ -11,41 +11,41 @@ subCategories: [ "Bits and Bytes" ]
 = bitSet()
 
 
-// OVERVIEW SECTION STARTS
+// अवलोकन अनुभाग शुरू होता है
 Sets (writes a 1 to) a bit of a numeric variable.
-[#overview]
+[#अवलोकन]
 --
 
 [float]
-=== Description
+=== विवरण
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== वाक्य - विन्यास (Syntax)
 `bitSet(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to set. +
-`n`: which bit to set, starting at 0 for the least-significant (rightmost) bit.
+=== पैरामीटर
+`x`: संख्यात्मक चर जिसका बिट साफ़ करना है| +
+`n`: कम से कम महत्वपूर्ण (सबसे दाएं) बिट के लिए 0 पर शुरू करने के लिए कौन सा स्पष्ट है।
 
 
 [float]
-=== Returns
+=== रिटर्न
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// अवलोकन अनुभाग अंत
 
 
-// SEE ALSO SECTION
-[#see_also]
+// यह भी देखे खंड
+[#यह_भी_देखे]
 --
 
 [float]
-=== See also
+=== यह भी देखे
 
 --
-// SEE ALSO SECTION ENDS
+// यह भी देखे खंड का अंत
